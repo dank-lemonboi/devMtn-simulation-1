@@ -1,18 +1,19 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { Link } from 'react-router-dom';
+import routes from './routes.js';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+       <div className="shelf_container">
+       <Link to="/shelfA"><p>Shelf A</p></Link>
+       <Link to='/shelfB'><p>Shelf B</p></Link>
+       <Link to='/shelfC'><p>Shelf C</p></Link>
+       <Link to='/shelfD'><p>Shelf D</p></Link>
+       {routes}
+       </div>
       </div>
     );
   }
