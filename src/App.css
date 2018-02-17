@@ -2,40 +2,35 @@
   text-align: center;
 }
 
-.nav_bar{
-  width: 100vw;
-  height: 50px;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
+.header{
+  background: #AB2A19;
   height: 80px;
+  display: flex;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.logo {
+  padding-left: 36%;
 }
 
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.header p {
+  margin: 0;
+  padding: 1em;
 }
 
 .shelf_container {
   height: 100vh;
-  width: 90%;
+  width: 100vw;
   background: #e2e0e0;
+  margin: 0;
+  padding: 0 35%;
+}
+
+.shelf_container p {
+  margin-bottom: 10;
+  padding: 16px 0;
+  height: 2em;
+  background: #D34735;
+  width: 22em;
 }
 
 .shelf {
@@ -43,4 +38,24 @@
   width: 95%;
   background: #c2c0c0;
   margin-left: 20px;
+}
+
+.bin_container {
+  height: 100vh;
+  width: 90%;
+  background: #e2e0e0;
+  margin:0;
+}
+
+
+.bin_contents {
+  height: 75%;
+  background: #c2c0c0;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.bin_container3 p{
+  margin:0;
 }
